@@ -1,32 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-*
-{
+
+*{
     padding: 0; 
     margin: 0; 
     box-sizing: border-box; /*så att inte allt går in i allt ( hjälper resposivitet)*/
 }
+
 body{
-
     font-family: 'Poppins', sans-serif;
-    overflow: hidden; /* för att ta bort sidebaren*/
-
-    
+    overflow: hidden; /* för att ta bort sidebaren*/  
 }
 
-section{    
+/*sections*/
+
+section{      
     position: absolute;    
     min-height: 100vh;
     padding: 100px;
     display: flex;
-
-
 }
-
 .sec-1{
     left: 0;
     width: 60%;
 }
-
 .sec-2{
     right: 0;
     background-color:rgb(45, 13, 75) ;
@@ -35,13 +31,12 @@ section{
 
 /*animationen på vissa texter*/
 
-.ali {
+.anima {
     color: #ffffff;
     position: relative;
     text-decoration: none;
-  }
-  
-  .ali::before {
+}
+.anima::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -53,14 +48,13 @@ section{
     transform-origin: right;
     transform: scaleX(0);
     transition: transform .2s ease-in-out;
-  }
-  
-  .ali:hover::before {
+}
+.anima:hover::before {
     transform-origin: left;
     transform: scaleX(1);
-  }
+}
 
-/*header*/
+/*header, navbar*/
 
 .header {
     padding: 30px 30px; 
@@ -73,8 +67,7 @@ section{
     display: flex;
     align-items: center;
 }
-  
-  .header a {
+.header a {
     color: rgb(255, 255, 255);
     padding: 10px;
     text-decoration: none;
@@ -85,41 +78,33 @@ section{
     font-weight: 400;
     display: inline-block;
     justify-content: space;
-  }
-
-  
-  
-  .header-right {
+}
+.header-right {
     float: right;
     position: relative;
     left: -20px;
     cursor: pointer;
+}
 
+/*stora texten på vänstra delen av sidan*/
 
-  }
-
-/*texten*/
 .content{
     position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
-
 .content .textBox{
     position: relative;
     max-width: 600px;
 }
-
 .content .textBox h2{
     color: rgb(0, 0, 0);
     font-size: 4em;
     line-height: 1.5em;
     font-weight: 900;
 }
-
 .content .textBox h2 span{
     font-size: 1.7em;
     color: rgb(45, 13, 75);
@@ -128,7 +113,10 @@ section{
     color:rgb(0, 0, 0)
 }
 
-.bn3 {
+/*klassen knappen som omdirigerar dig till sidan
+ där du kan lyssna på podden */
+
+.bn1 {
     display: inline-block;
     padding: 0.5em 4em;
     margin: 0 0.1em 0.1em 0;
@@ -140,11 +128,11 @@ section{
     text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
     text-align: center;
     position: relative;
-    top: 0.9cm;
-    
-  }
+    top: 0.9cm;   
+}
 
-/*bild*/
+/*bilden på mikrofonen*/
+
 img{
     position: absolute;
     bottom: 0;
@@ -152,6 +140,8 @@ img{
     max-height: 80%;
     max-width: 80%;
 }
+
+/*koden som gör att texten ändras*/
 
 #spin::before {
     content: "";
