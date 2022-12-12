@@ -94,12 +94,11 @@ section{
 /*texten*/
 
 .content{
-    position: relative;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    left: 32%;
+
 
 }
 
@@ -107,6 +106,7 @@ section{
     position: relative;
     max-width: 800px;
     color: rgb(255, 255, 255);
+    padding-left: 60px;
 }
 
 .content .textBox h2{
@@ -122,23 +122,12 @@ section{
 .content .textBox audio{
     position: relative;
     top: 0.9cm;
-  
-  
 }
-
-
 .content .textBox audio::-webkit-media-controls-panel {
 
     background-color: #9d57ea;
   }
   
-    
-img{
-  position: absolute;
-  top: 33.5%;
-  left: 22%;
-  transform: translate(-50%);
-}
 
 .sci{
       position: absolute;
@@ -162,3 +151,6 @@ img{
       margin: 25px 15px;
       transform: scale(0.6);
   }
+
+
+  
