@@ -1,3 +1,5 @@
+/*jag importerade fonten till css (inte html) för att om man gör det så får man alla versioner av textypen*/
+
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
 *{
@@ -7,7 +9,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    overflow: hidden; /* för att ta bort sidebaren*/ 
+
 }
 
 section{    
@@ -21,12 +23,12 @@ section{
 
 /*animationen på vissa texter*/
 
-.anima {
+.a {
     color: #000000;
     position: relative;
     text-decoration: none;
   }
-  .anima::before {
+  .a::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -39,7 +41,7 @@ section{
     transform: scaleX(0);
     transition: transform .2s ease-in-out;
   }  
-  .anima:hover::before {
+  .a:hover::before {
     transform-origin: left;
     transform: scaleX(1);
   }
@@ -76,6 +78,7 @@ section{
   cursor: pointer;
 }
 
+
 /*div:en som innehåller texten, bilden (tiktok)
  och audioplayer:en. note: Bilden har ingen klass*/
 
@@ -85,50 +88,28 @@ section{
   justify-content: center;
   align-items: center;
 }
-.content .textBox{
+.content .text-box{
   position: relative;
   max-width: 800px;
   color: rgb(255, 255, 255);
   padding-left: 60px;
 }
-.content .textBox h2{
+.content .text-box h2{
   font-size: 4em;
   line-height: 1.5em;
   font-weight: 900;
 }
-.content .textBox p{
+.content .text-box p{
   font-size: 1.2em;
 }
-.content .textBox audio{
+.content .text-box audio{
   position: relative;
   top: 0.9cm;
 }
-.content .textBox audio::-webkit-media-controls-panel {
-  background-color: #9d57ea;
+.content .text-box audio::-webkit-media-controls-panel {
+  background-color: #ffffff;
 }
 
-/*ikonerna på sociala medier som kan navigera dig till
- några social medier*/
-
-.sci{
-  position: absolute;
-  top: 50%;
-  right: 30px;
-  transform: translateY(-50%);
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  }
-  .sci li {
-    list-style: none;
-  }
-  .sci li a{
-    display: inline-block;
-    filter: invert(1);
-    margin: 10px 15px;
-    transform: scale(0.6);
-  }
 
 
   
