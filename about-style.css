@@ -17,7 +17,7 @@ section{
     width: 100%;
 }
 
-#ssection-1{
+#section-1{
     background-color: white;
 }
 
@@ -85,15 +85,14 @@ section{
 
 
 
-/*div:en som innehåller texten, bilden (tiktok)
- och audioplayer:en. note: Bilden har ingen klass*/
+/*div:en som innehåller texten, bilden (microphone-2)*/
 
 .content{
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 230px;
+  padding-top: 12.5%;
 }
 .content .text-box{
   position: relative;
@@ -160,7 +159,7 @@ section{
     }
 }
 
-/*s*/
+/* innehåll för section 2, en container som innehåller kort och text*/
 
 
   #container {
@@ -171,7 +170,7 @@ section{
 	box-shadow: 0 0 30px rgba(0,0,0,.3);
 	-webkit-box-shadow: 0 0 30px rgba(0,0,0,.3);
 	overflow: hidden;
-  margin-top: 225px;
+  margin-top: 10.5%;
 
 }
 

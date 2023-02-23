@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakta oss</title>
-    <link rel="shortcut icon" href="images/microphone2.png">
+    <link rel="shortcut icon" href="images/microphone-2.png">
     <link rel="stylesheet" href="contact-style.css">
 </head>
+
 <body>
 
+    
+
+    
+
     <div class="container-1">
+
+        <!--nav- header-->
 
         <div class="header">
             <a href="" class="logo"></a>
@@ -20,8 +28,12 @@
                 <a href="about.html" class="about a">Om</a>
             </div>
         </div>
-        
-        <form action="https://formspree.io/f/mdovkglq" method="POST">
+
+
+        <!--boxen, dvs rutorna som man skriver med-->
+
+
+        <form method="POST">
             <h1>Kontakta <span>oss</h1>
             <input name='Name' type="text" id="name" placeholder="Ditt namn" required>
             <input name='Email' type="email" id="email" placeholder="E-mail" required>
@@ -33,8 +45,41 @@
 
     </div>
 
+    <!-- container två som bara ger färg med inga innehåll-->
+
     <div class="container-2"></div>
 
+     <!-- script-->
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <script>
+        var btn = document.getElementById('btn');
+        btn.addEventListener('click',function(e) {
+            e.preventDefault()
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var subject = document.getElementById('subject').value;
+            var message = document.getElementById('message').value;
+            var body = 'name: ' + name + '<br/> email: ' + email + '<br/> subject: ' +subject + '<br/> message: ' + message;
+
+
+                            Email.send({
+                    SecureToken : "ef6c1d9b-86cf-4e3d-9ffc-c67e62f1ffe9",
+                    To : 'helloitzmeuu@gmail.com',
+                    From : "helloitzmeuu@gmail.com",
+                    Subject : "This is the subject",
+                    Body : body
+                }).then(
+                message => alert(message)
+                );
+
+        })
+    </script>
     
+
+
 </body>
+
 </html>
