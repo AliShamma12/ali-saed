@@ -23,12 +23,12 @@ section{
 
 /*animationen på vissa texter*/
 
-.a {
+.animation {
     color: #000000;
     position: relative;
     text-decoration: none;
   }
-  .a::before {
+  .animation::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -41,7 +41,7 @@ section{
     transform: scaleX(0);
     transition: transform .2s ease-in-out;
   }  
-  .a:hover::before {
+  .animation:hover::before {
     transform-origin: left;
     transform: scaleX(1);
   }
