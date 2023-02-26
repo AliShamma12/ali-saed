@@ -162,25 +162,23 @@ section{
 /* innehåll för section 2, en container som innehåller*/
 
 
-      .text {
-        color: white;
-        font-weight: bold;
-        position: absolute;
-        top: 150%;
-        left: 50.1%;
-        transform: translate(-50%, -50%);
-        width: 80%;
-        padding: 20px;
-        text-align: center;
-        font-family: 'Poppins', sans-serif;
-       }
-
-       .box{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       }
+ .text {
+   color: white;
+   font-weight: bold;
+   position: absolute;
+   top: 150%;
+   left: 50.1%;
+   transform: translate(-50%, -50%);
+   width: 80%;
+   padding: 20px;
+   text-align: center;
+   font-family: 'Poppins', sans-serif;
+  }
+  .box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
 
 /*kort 1*/
 
